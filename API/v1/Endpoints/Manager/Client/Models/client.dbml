@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BD_Base" Class="clientDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LUNUNEZ-NTB;Initial Catalog=BD_Base;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BD_BaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="" Member="CREATECLIENT">
+    <Type Name="CREATECLIENT">
+      <Column Name="NAME" Type="System.String" CanBeNull="false" />
+      <Column Name="LASTNAME" Type="System.String" CanBeNull="false" />
+      <Column Name="EMAIL" Type="System.String" CanBeNull="false" />
+      <Column Name="MOBILE" Type="System.Int32" CanBeNull="false" />
+      <Column Name="PHONE" Type="System.Int32" CanBeNull="false" />
+      <Column Name="RUT" Type="System.Int32" CanBeNull="false" />
+      <Column Name="DV" Type="System.String" CanBeNull="false" />
+      <Column Member="TOKEN" Type="System.Guid" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_CLIENTE" Member="DATACLIENT">
+    <Type Name="DATACLIENT">
+      <Column Name="CLIE_NOMBRE" Member="NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLIE_APELLIDOS" Member="LASTNAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLIE_EMAIL" Member="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLIE_CELULAR" Member="MOBILE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLIE_TELEFONO" Member="PHONE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLIE_TOKEN" Member="TOKEN" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLIE_RUT" Member="RUT" Type="System.Int32" CanBeNull="false" />
+      <Column Name="CLIE_DV" Member="DV" Type="System.String" CanBeNull="false" />
+      <Column Name="CANTIDADCASOS" Member="CANTIDAD" Type="System.Int32" CanBeNull="false" />
+      <Column Name="TOTALCONTRATOS" Member="TOTAL" Type="System.Int32" CanBeNull="false" />
+      <Column Name="TOTALDEUDA" Member="DEUDA" Type="System.Int32" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

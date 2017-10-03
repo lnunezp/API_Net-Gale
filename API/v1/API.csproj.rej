@@ -1,0 +1,37 @@
+diff a/API/v1/API.csproj b/API/v1/API.csproj	(rejected hunks)
+@@ -440,13 +440,6 @@
+       <DependentUpon>DotacionObservadoresModel.dbml</DependentUpon>
+     </Compile>
+     <Compile Include="Endpoints\SC\DotacionObservadores\Services\Get.cs" />
+-    <Compile Include="Endpoints\SC\Excepciones\ExcepcionesController.cs" />
+-    <Compile Include="Endpoints\SC\Excepciones\Models\Excepciones.designer.cs">
+-      <AutoGen>True</AutoGen>
+-      <DesignTime>True</DesignTime>
+-      <DependentUpon>Excepciones.dbml</DependentUpon>
+-    </Compile>
+-    <Compile Include="Endpoints\SC\Excepciones\Services\Post.cs" />
+     <Compile Include="Endpoints\SC\Metas\MetasController.cs" />
+     <Compile Include="Endpoints\SC\Metas\Models\MetasModels.designer.cs">
+       <AutoGen>True</AutoGen>
+@@ -832,11 +825,6 @@
+       <LastGenOutput>MESES.designer.cs</LastGenOutput>
+       <SubType>Designer</SubType>
+     </Content>
+-    <Content Include="Endpoints\SC\Excepciones\Models\Excepciones.dbml">
+-      <Generator>MSLinqToSQLGenerator</Generator>
+-      <LastGenOutput>Excepciones.designer.cs</LastGenOutput>
+-      <SubType>Designer</SubType>
+-    </Content>
+     <None Include="Properties\PublishProfiles\drubilar.pubxml" />
+     <None Include="Web.Debug.config">
+       <DependentUpon>Web.config</DependentUpon>
+@@ -943,9 +931,6 @@
+     <None Include="Endpoints\Mantenedores\Periodos\Meses\Models\MESES.dbml.layout">
+       <DependentUpon>MESES.dbml</DependentUpon>
+     </None>
+-    <None Include="Endpoints\SC\Excepciones\Models\Excepciones.dbml.layout">
+-      <DependentUpon>Excepciones.dbml</DependentUpon>
+-    </None>
+     <EmbeddedResource Include="Resources\Errors.resx" />
+     <EmbeddedResource Include="Resources\Util.resx" />
+     <None Include="Specifics\Configuration\Models\Configuration.dbml.layout">

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BD_Base" Class="attorneyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LUNUNEZ-NTB;Initial Catalog=BD_Base;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BD_BaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.V_ABOGADO" Member="DATAATTORNEY">
+    <Type Name="DATAATTORNEY">
+      <Column Name="ABOG_CODIGO" Member="CODE" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ABOG_RUT" Member="RUT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ABOG_DV" Member="DV" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ABOG_NOMBRE" Member="NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ABOG_APELLIDOS" Member="LASTNAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ABOG_ACTIVO" Member="ACTIVE" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ABOG_TOKEN" Member="TOKEN" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CREATEATTORNEY">
+    <Type Name="CREATEATTORNEY">
+      <Column Name="RUT" Type="System.String" CanBeNull="false" />
+      <Column Name="DV" Type="System.String" CanBeNull="false" />
+      <Column Name="NOMBRE" Member="NAME" Type="System.String" CanBeNull="false" />
+      <Column Name="APELLIDOS" Member="LASTNAME" Type="System.String" CanBeNull="false" />
+      <Column Name="TOKEN" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

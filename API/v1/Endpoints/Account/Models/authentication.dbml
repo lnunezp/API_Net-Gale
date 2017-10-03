@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BD_Base" Class="authenticationDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LUNUNEZ-NTB;Initial Catalog=BD_Base;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BD_BaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="" Member="USER">
+    <Type Name="USER">
+      <Column Name="user" Type="System.String" CanBeNull="false" />
+      <Column Name="" Member="password" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CURRENTUSER">
+    <Type Name="CURRENTUSER">
+      <Column Name="USUA_TOKEN" Member="TOKEN" Storage="_nombre" Type="System.Guid" CanBeNull="false" />
+      <Column Name="USUA_NOMBRE_USUARIO" Member="NOMBREUSUARIO" Storage="_token" Type="System.String" CanBeNull="false" />
+      <Column Name="USUA_NOMBRE" Member="NOMBRE" Storage="_nombreCompleto" Type="System.String" CanBeNull="false" />
+      <Column Name="USUA_APELLIDO" Member="APELLIDO" Type="System.String" CanBeNull="false" />
+      <Column Name="USUA_MAIL" Member="MAIL" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="PASSWORDRECOVERY">
+    <Type Name="PASSWORDRECOVERY">
+      <Column Name="host" Type="System.String" CanBeNull="false" />
+      <Column Name="email" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_USUARIO" Member="DATAUSER">
+    <Type Name="DATAUSER">
+      <Column Name="USUA_NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_APELLIDO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_NOMBRE_USUARIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="USUA_TOKEN" Type="System.Guid" DbType="UniqueIdentifier" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="USUA_MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

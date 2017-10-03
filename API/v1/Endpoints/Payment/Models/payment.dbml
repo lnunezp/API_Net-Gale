@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BD_Base" Class="paymentDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LUNUNEZ-NTB;Initial Catalog=BD_Base;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BD_BaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="" Member="CREATEPAYMENT">
+    <Type Name="CREATEPAYMENT">
+      <Column Name="TOKEN" Member="TOKENCASE" Type="System.Guid" CanBeNull="false" />
+      <Column Name="COMPROBANTE" Member="VOUCHER" Type="System.String" CanBeNull="false" />
+      <Column Name="MONTOPAGO" Member="VALUE" Type="System.Int32" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_PAGO" Member="DATAPAYMENT">
+    <Type Name="DATAPAYMENT">
+      <Column Name="PAGO_CODIGO" Member="CODE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PAGO_COMPROBANTE" Member="VOUCHER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PAGO_MONTO" Member="VALUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGO_FECHA" Member="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PAGO_CASO_CODIGO" Member="CASECODE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PAGO_TOKEN" Member="TOKEN" Type="System.Guid" DbType="UniqueIdentifier" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="CASO_TOKEN" Member="CASETOKEN" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BD_Base" Class="userDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LUNUNEZ-NTB;Initial Catalog=BD_Base;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BD_BaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.V_USUARIO" Member="DATAUSER">
+    <Type Name="DATAUSER">
+      <Column Name="USUA_NOMBRE" Member="NAME" Storage="_NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_APELLIDO" Member="LASTNAME" Storage="_APELLIDO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_USERNAME" Member="USERNAME" Storage="_NOMBRE_USUARIO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUA_ACTIVO" Member="ACTIVE" Storage="_ACTIVO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="USUA_TOKEN" Member="TOKEN" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USUA_MAIL" Member="MAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CREATEUSER">
+    <Type Name="CREATEUSER">
+      <Column Name="NAME" Type="System.String" CanBeNull="false" />
+      <Column Name="LASTNAME" Type="System.String" CanBeNull="false" />
+      <Column Name="USERNAME" Type="System.String" CanBeNull="false" />
+      <Column Name="PASSWORD" Type="System.String" CanBeNull="false" />
+      <Column Name="MAIL" Type="System.String" CanBeNull="false" />
+      <Column Member="TOKEN" Type="System.Guid" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

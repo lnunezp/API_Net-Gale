@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BD_Base" Class="caseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LUNUNEZ-NTB;Initial Catalog=BD_Base;Integrated Security=True;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BD_BaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="" Member="CREATECASE">
+    <Type Name="CREATECASE">
+      <Column Name="IDENTIFICADOR" Member="INDENTIFIER" Type="System.String" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Member="DESCRIPTION" Type="System.String" CanBeNull="false" />
+      <Column Name="MONTO" Member="VALUE" Type="System.Int32" CanBeNull="false" />
+      <Column Name="CLI_TOKEN" Member="CLIETOKEN" Type="System.Guid" CanBeNull="false" />
+      <Column Name="ABOG_TOKEN" Member="ATTOTOKEN" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_CASO" Member="DATACASE">
+    <Type Name="DATACASE">
+      <Column Name="CASO_CODIGO" Member="CODE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CASO_DESCRIPCION" Member="DESCRIPTIONS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CASO_MONTO" Member="VALUE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CASO_SALDO" Member="BALANCE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CASO_TOKEN" Member="TOKEN" Type="System.Guid" DbType="UniqueIdentifier" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="CASO_FECHA" Member="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CASO_CLIE_CODIGO" Member="CLIECODE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLIE_TOKEN" Member="CLIETOKEN" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ABOG_NOMBRE" Member="NAME" Type="System.String" CanBeNull="false" />
+      <Column Name="ABOG_APELLIDOS" Member="LASTNAME" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

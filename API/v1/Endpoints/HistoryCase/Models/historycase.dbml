@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Class="historycaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="" Member="CREATEHISTORYCASE">
+    <Type Name="CREATEHISTORYCASE">
+      <Column Name="IDENTIFICADOR" Member="IDENTIFIER" Type="System.String" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Member="DESCRIPTION" Type="System.String" CanBeNull="false" />
+      <Column Name="TOKEN" Member="CASETOKEN" Type="System.Guid" CanBeNull="false" />
+      <Column Name="HISTORIATOKEN" Member="HISTORYTOKEN" Type="System.Guid" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

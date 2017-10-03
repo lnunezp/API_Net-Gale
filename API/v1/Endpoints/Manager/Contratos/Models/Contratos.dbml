@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SGR_Desav3" Class="ContratosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=172.25.81.78;Initial Catalog=SGR_Desav3;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SGR_Desav3ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VI_CONTRATOS" Member="CONTRATOS_LISTA">
+    <Type Name="CONTRATOS_LISTA">
+      <Column Name="CONT_NOMBRE" Member="nombre" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CONT_DESCRIPCION" Member="descripcion" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="CONT_FECHACREACION" Member="fechaCreacion" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CONT_CODIGOCONTRATO" Member="codigoContrato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CONT_TOKEN" Member="token" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EMPR_NOMBRE" Member="empresaNombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EMPR_RUT" Member="empresaRut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EMPR_DV" Member="empresaDv" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="EMPR_TOKEN" Member="empresaToken" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="NVL_NOMBRE" Member="nivelNombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NVL_TOKEN" Member="nivelToken" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CONTRATOS">
+    <Type Name="CONTRATOS">
+      <Column Name="nombre" Type="System.String" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" CanBeNull="false" />
+      <Column Name="codigo" Type="System.String" CanBeNull="false" />
+      <Column Name="tokenEmpresa" Type="System.String" CanBeNull="false" />
+      <Column Name="tokenNivelOrranizacional" Type="System.String" CanBeNull="false" />
+      <Column Name="token" Type="System.String" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CONTRATOS_NIVEL_LISTA">
+    <Type Name="CONTRATOS_NIVEL_LISTA">
+      <Column Name="CONT_TOKEN" Member="tokenContrato" Type="System.Guid" CanBeNull="false" />
+      <Column Name="CONT_NOMBRE" Member="nombreContrato" Type="System.String" CanBeNull="false" />
+      <Column Name="CONT_CODIGOCONTRATO" Member="codigoContrato" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CONTRATOS_NIVEL">
+    <Type Name="CONTRATOS_NIVEL">
+      <Column Member="tokenNivel" Type="System.Guid" CanBeNull="false" />
+      <Column Member="tokenEmpresa" Type="System.Guid" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
